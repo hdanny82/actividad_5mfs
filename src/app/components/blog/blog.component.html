@@ -1,0 +1,24 @@
+<div class="div-noticia">
+    <section id="formulario" class="formulario-section">
+        <h1>Formulario SMS</h1>
+        <hr>
+        <div>
+            <label for="titulo">Titulo:</label>
+            <input type="text" id="titulo" class="form-control" placeholder="Ingrese el titulo" [(ngModel)]="newNoticia.titulo">
+        </div>
+        <div>
+            <label for="url">Imagen (Url):</label>
+            <input type="text" id="url" class="form-control" alt="Imagen" placeholder="Ingrese la url del tema" [(ngModel)]="newNoticia.urlImagen">
+        </div>
+        <div>
+            <label for="cuerpo">Cuerpo de la publicación:</label>
+            <textarea id="cuerpo" class="form-control" placeholder="Ingrese su contenido" [(ngModel)]="newNoticia.cuerpoNoticia"></textarea>
+        </div>
+        <div>
+            <label for="fecha">Fecha de la publicación:</label>
+            <input type="date" id="fecha" class="form-control" placeholder="Ingrese la fecha de publicación" [(ngModel)]="newNoticia.fechaPublicacion">
+        </div>
+        <button (click)="guardarNoticia()">Publicar Contenido</button>
+    </section>
+    <section id="listaNoticias" [innerHTML]="cargarNoticias()"></section>
+</div>

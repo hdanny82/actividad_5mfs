@@ -1,0 +1,39 @@
+label, input, textarea {
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 200px;
+}
+
+.div-noticia {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario-section {
+    flex: 2; 
+}
+
+#listaNoticias {
+    flex: 5.5; 
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; 
+    font-size: 14px; 
+}
+
+.form-control[type="text"],
+.form-control[type="date"],
+.form-control[type="url"],
+.form-control[type="textarea"],
+.form-control textarea {
+    width: 100%;
+}
